@@ -6,10 +6,10 @@ const increment = document.querySelector("button[data-action=increment]");
 
 increment.addEventListener("click", () => {
     counter += 1;
-    return (spanCounter.textContent = counter)
+    spanCounter.textContent = counter
 })
 
 decrement.addEventListener("click", () => {
     counter -= 1;
-    return (spanCounter.textContent = counter)
+    spanCounter.textContent = counter
 })

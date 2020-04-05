@@ -7,9 +7,10 @@ const ingredients = [
     'Приправы',
 ];
 
-ingredients.forEach(ingredient => {
-    const creatLi = document.createElement('li')
 
+
+ingredients.map(ingredient => {
+    const creatLi = document.createElement('li')
     creatLi.insertAdjacentHTML("afterbegin", ingredient)
     document.querySelector('#ingredients').appendChild(creatLi)
 });
